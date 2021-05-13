@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  servicios.api.libreria:
+    image: ${DOCKER_REGISTRY-}serviciosapi
+    build:
+      context: .
+      dockerfile: Servicios.api.Libreria/Dockerfile
+
+  servicios.api.gateway:
+    image: ${DOCKER_REGISTRY-}serviciosapi
+    build:
+      context: .
+      dockerfile: Servicios.api.Gateway/Dockerfile
+
+
+  servicios.api.seguridad:
+    image: ${DOCKER_REGISTRY-}serviciosapi
+    build:
+      context: .
+      dockerfile: Servicios.api.Seguridad/Dockerfile
+

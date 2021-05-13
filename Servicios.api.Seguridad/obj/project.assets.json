@@ -5612,33 +5612,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\javix\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/usuario/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MicroserviceVaxi\\Microservices\\Servicios.api.Seguridad\\Servicios.api.Seguridad.csproj",
+      "projectUniqueName": "/Users/usuario/Downloads/Microservices/Servicios.api.Seguridad/Servicios.api.Seguridad.csproj",
       "projectName": "Servicios.api.Seguridad",
-      "projectPath": "C:\\MicroserviceVaxi\\Microservices\\Servicios.api.Seguridad\\Servicios.api.Seguridad.csproj",
-      "packagesPath": "C:\\Users\\javix\\.nuget\\packages\\",
-      "outputPath": "C:\\MicroserviceVaxi\\Microservices\\Servicios.api.Seguridad\\obj\\",
+      "projectPath": "/Users/usuario/Downloads/Microservices/Servicios.api.Seguridad/Servicios.api.Seguridad.csproj",
+      "packagesPath": "/Users/usuario/.nuget/packages/",
+      "outputPath": "/Users/usuario/Downloads/Microservices/Servicios.api.Seguridad/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\javix\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/usuario/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5714,7 +5705,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
       }
     }
   }
