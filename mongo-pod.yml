@@ -1,0 +1,22 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+    name: mongo-pod
+    labels:
+        app: microservices-librerias
+        name: mongo-pod
+spec:
+    containers:
+    - name: mongo
+      image: mongo:4.12.12
+      command:
+        - /bin/bash
+        - -c
+      env:
+        - name: MONGO_INITDB_ROOT_USERNAME
+          value: "vaxidrez"
+          name: MONGO_INITDB_ROOT_PASSWORD
+          value: "$VaxiDrez2025"
+      ports:
+        - containerPort: 27017
+

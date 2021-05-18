@@ -1,18 +1,9 @@
 ﻿<Properties StartupConfiguration="{845C7E91-4C39-444C-9914-0F04A1571753}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="docker-compose.yml">
-    <Files>
-      <File FileName="docker-compose.yml" Line="20" Column="17" IsPinned="True" />
-      <File FileName="Servicios.api.Gateway/Dockerfile" Line="22" Column="1" />
-      <File FileName=".dockerignore" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Microservices" expanded="True">
-            <Node name="docker-compose" expanded="True">
-              <Node name="docker-compose.yml" selected="True" />
-            </Node>
-          </Node>
+          <Node name="Microservices" expanded="True" />
         </State>
       </Pad>
     </Pads>

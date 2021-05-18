@@ -1,0 +1,92 @@
+services:
+  servicios.api.gateway:
+    build:
+      context: /Users/usuario/Downloads/Microservices
+      dockerfile: Servicios.api.Gateway/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Servicios.api.Gateway
+      target: base
+    container_name: Servicios.api.Gateway
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: serviciosapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/Servicios.api.Gateway.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    tty: true
+    volumes:
+    - /Users/usuario/Downloads/Microservices/Servicios.api.Gateway:/app:rw
+    - /Users/usuario/vsdbg/vs2017u5:/remote_debugger:rw
+    - /Users/usuario/.nuget/packages:/root/.nuget/packages:ro
+    - /Users/usuario/Downloads/Microservices:/src:rw
+  servicios.api.libreria:
+    build:
+      context: /Users/usuario/Downloads/Microservices
+      dockerfile: Servicios.api.Libreria/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Servicios.api.Libreria
+      target: base
+    container_name: Servicios.api.Libreria
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: serviciosapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/Servicios.api.Libreria.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    tty: true
+    volumes:
+    - /Users/usuario/Downloads/Microservices/Servicios.api.Libreria:/app:rw
+    - /Users/usuario/vsdbg/vs2017u5:/remote_debugger:rw
+    - /Users/usuario/.nuget/packages:/root/.nuget/packages:ro
+    - /Users/usuario/Downloads/Microservices:/src:rw
+  servicios.api.seguridad:
+    build:
+      context: /Users/usuario/Downloads/Microservices
+      dockerfile: Servicios.api.Seguridad/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Servicios.api.Seguridad
+      target: base
+    container_name: Servicios.api.Seguridad
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: serviciosapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net5.0/Servicios.api.Seguridad.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    tty: true
+    volumes:
+    - /Users/usuario/Downloads/Microservices/Servicios.api.Seguridad:/app:rw
+    - /Users/usuario/vsdbg/vs2017u5:/remote_debugger:rw
+    - /Users/usuario/.nuget/packages:/root/.nuget/packages:ro
+    - /Users/usuario/Downloads/Microservices:/src:rw
+version: '3.4'

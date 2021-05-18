@@ -1,0 +1,14 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+    name: microservice-libreia-pod
+    labels:
+        app: microservices-librerias
+        type: microservices
+spec:
+    containers:
+    - name: microservices-libreria-app
+      image: travisofting/apilibreria:latest
+      ports:
+        - containerPort: 80
+

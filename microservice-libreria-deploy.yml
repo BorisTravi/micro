@@ -1,0 +1,26 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: microservice-libreria-deploy
+    labels:
+        name: microservices-librerias-deploy
+        app: microsevices
+spec:
+    replicas: 2
+    selector:
+        matchLabels:
+            app: microservices-librerias
+            type: microservice
+    template:
+        metadata:
+            name: microservice-libreria-pod
+            labels:
+                app: microservices-librerias
+                type: microservices
+        spec:
+            containers:
+            - name: microservices-libreria-app
+            image: travisofting/apilibreria:latest
+            ports:
+               - containerPort: 80
+

@@ -11,6 +11,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Servicios.api.Gateway", "Se
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{845C7E91-4C39-444C-9914-0F04A1571753}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kubernetes", "kubernetes", "{9C8B1F4B-03B2-4E07-B426-DABD1933258C}"
+	ProjectSection(SolutionItems) = preProject
+		microservice-libreria-pod.yml = microservice-libreria-pod.yml
+		mongo-pod.yml = mongo-pod.yml
+		microservice-seguridad-pod.yml = microservice-seguridad-pod.yml
+		sqlserver-pod.yml = sqlserver-pod.yml
+		microservice-libreria-deploy.yml = microservice-libreria-deploy.yml
+		mongo-deploy.yml = mongo-deploy.yml
+		microservice-seguridad-deploy.yml = microservice-seguridad-deploy.yml
+		sqlserver-deploy.yml = sqlserver-deploy.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

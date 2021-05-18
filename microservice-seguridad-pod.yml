@@ -1,0 +1,14 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+    name: microservice-seguridad-pod
+    labels:
+        app: microservices-seguridad
+        type: microservice
+spec:
+    containers:
+    - name: microservices-seguridad-app
+      image: travisofting/apiseguridad:latest
+      ports:
+        - containerPort: 80
+
